@@ -15,8 +15,8 @@
 
     <!-- 테두리 두께 및 색상 -->
     <stroke
-        android:width="2dp"
-        android:color="#BDBDBD" />
+        android:width="1dp"
+        android:color="#5D5D5D" />
 
 
 </shape>

@@ -20,17 +20,10 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="￦"
-            android:layout_gravity="bottom"
-            android:textColorHint="#ffffff"
-            android:textSize="30dp" />
-        <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="숫자를 입력하시오."
+            android:hint="숫자를 입력하시오"
             android:layout_gravity="bottom"
             android:textColorHint="#ffffff"
             android:textColor="#ffffff"
@@ -66,7 +59,7 @@
             android:background="@null"
             android:layout_weight="1"
             android:gravity="left"
-            android:hint="  뭐 더하기 뭐 는 뭐"
+            android:hint="뭐 더하기 뭐 는 뭐"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
             android:textSize="20dp" />
