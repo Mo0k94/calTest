@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonPoint = (Button) findViewById(R.id.buttonPoint);
         final Button buttonequal = (Button) findViewById(R.id.buttonequal);
         textView = (TextView) findViewById(R.id.textView);
-        textChar = (TextView) findViewById(R.id.textChar);
+        //textChar = (TextView) findViewById(R.id.textChar);
         editText2 = (EditText) findViewById(R.id.editText2);
 
 
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.buttonAdd:
                         //arrayList.add(textView.getText().toString());
-                        textChar.setText(((Button) v).getText().toString());
+                        //textChar.setText(((Button) v).getText().toString());
                         textView.setText(textView.getText().toString() + "+");
                         editText2.setText(textView.getText().toString());
 
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.ButtonSub:
 
-                        textChar.setText(((Button) v).getText().toString());
+                        //textChar.setText(((Button) v).getText().toString());
                         textView.setText(textView.getText().toString() + "-");
                         editText2.setText(textView.getText().toString());
                         //value1 = getTextValueFloat();
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.buttonmul:
 
-                        textChar.setText(((Button) v).getText().toString());
+                        //textChar.setText(((Button) v).getText().toString());
                         textView.setText(textView.getText().toString() + "*");
                         editText2.setText(textView.getText().toString());
 
@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.buttonDiv:
 
-                        textChar.setText(((Button) v).getText().toString());
+                        //textChar.setText(((Button) v).getText().toString());
                         textView.setText(textView.getText().toString() + "/");
                         editText2.setText(textView.getText().toString());
 
