@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     TextView textChar;
     EditText editText2;
-    private DecimalFormat myFormatter = new DecimalFormat("###,###");
+    private DecimalFormat myFormatter = new DecimalFormat("###,###.##");
     //ArrayList arrayList = new ArrayList();
     private String formattedStringPrice;
     int count = 0;
@@ -339,6 +340,7 @@ public class MainActivity extends AppCompatActivity {
                 suf = Double.parseDouble(list.get(i + 1)); // 기호의 뒷숫자(suf)를
                 //Log.d("TAG", "두번째 숫자 : " + suf);
                 result = pre * suf; //곱해준다
+
                 formattedStringPrice = myFormatter.format(result);
                 //Log.d("TAG", "변환된 값 :  " + formattedStringPrice);
                 //list.set(i, result+""); //*기호를 곱하기의 결과로 바꿔준다.
@@ -372,12 +374,14 @@ public class MainActivity extends AppCompatActivity {
         for (i = 0; i < list.size(); i++) {
             if (list.get(i).equals("+")) {
                 Log.d("TAG", "list.get(i) : " + list.get(i));
+
                 pre = Double.parseDouble(list.get(i - 1).replaceAll(",", ""));
                 //pre = Double.parseDouble(list.get(i-1)); // 기호의 앞숫자(pre)와
                 //Log.d("TAG", "첫번째 숫자 : " + pre);
                 suf = Double.parseDouble(list.get(i + 1)); // 기호의 뒷숫자(suf)를
                 //Log.d("TAG", "두번째 숫자 : " + suf);
                 result = pre + suf; //더해준다
+
                 formattedStringPrice = myFormatter.format(result);
                 //Log.d("TAG", "변환된 값 :  " + formattedStringPrice);
                 //list.set(i, result+""); //+기호를 더하기 결과로 바꿔준다.
